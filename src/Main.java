@@ -4,21 +4,21 @@ import java.io.PrintStream;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        int initialamount = 100;
-        int fixedamount = 1000;
-        int replenishamount = 950;
-        int totalamount = initialamount + replenishamount;
-        System.out.println("Итоговая сумма: " + totalamount);
-        int bonus = totalamount / 100;
-        int accountammount = initialamount + replenishamount;
-        if (totalamount < fixedamount) {
+        int initialAmount = 100;
+        int fixedAmount = 1000;
+        int replenishAmount = 3000;
+        int totalAmount = initialAmount + replenishAmount;
+        System.out.println("Итоговая сумма: " + totalAmount);
+        int bonus = totalAmount / 100;
+        int accountAmmount = initialAmount + replenishAmount;
+        if (totalAmount < fixedAmount) {
             bonus = 0;
         }
         if (bonus > 0) {
-            accountammount = initialamount + replenishamount + bonus;
+            accountAmmount = initialAmount + replenishAmount + bonus;
         }
         System.out.println("Итоговый бонус: " + bonus);
-        System.out.println("Итоговая сумма на счету: " + accountammount);
+        System.out.println("Итоговая сумма на счету: " + accountAmmount);
     }
 }
 
